@@ -13,7 +13,7 @@ class MetaballsViewController: UIViewController {
     var grid: Grid!
     var cellViews = [CellView]()
     
-    var currentCircle: Circle?
+    var currentShape: Shape?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,17 +45,17 @@ class MetaballsViewController: UIViewController {
         touches.forEach { touch in
             let location = touch.location(in: self.view)
             for shape in grid.shapes {
-                if location.mPoint().dist(p: shape.centre) <= shape.radius {
-                    self.currentCircle = shape
-                    shape.centre = location.mPoint()
+                if shape.contains(p: location.mPoint()) {
+                    self.currentShape = shape
+                    shape.setPos(p: location.mPoint())
                     break
                 } else {
-                    self.currentCircle = nil
+                    self.currentShape = nil
                 }
             }
-            if (self.currentCircle == nil) {
-                self.currentCircle = Circle(centre: location.mPoint())
-                grid.addShape(c: self.currentCircle!)
+            if (self.currentShape == nil) {
+                self.currentShape = Circle(centre: location.mPoint())
+                grid.addShape(c: self.currentShape!)
             }
         }
         grid.update()
@@ -64,7 +64,7 @@ class MetaballsViewController: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         touches.forEach { touch in
             let location = touch.location(in: self.view)
-            currentCircle?.move(newPoint: location.mPoint())
+            currentShape?.setPos(p: location.mPoint())
         }
         grid.update()
     }

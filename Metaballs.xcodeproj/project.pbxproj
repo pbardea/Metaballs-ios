@@ -16,6 +16,7 @@
 		9F6928BA1EB5078700CD7EEC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6928B91EB5078700CD7EEC /* Grid.swift */; };
 		9F6928BC1EB5094900CD7EEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6928BB1EB5094900CD7EEC /* Extensions.swift */; };
 		9F6928C01EB521E100CD7EEC /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6928BF1EB521E100CD7EEC /* CellView.swift */; };
+		9F858B911EB6384E0062055D /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F858B901EB6384E0062055D /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9F6928B91EB5078700CD7EEC /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		9F6928BB1EB5094900CD7EEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9F6928BF1EB521E100CD7EEC /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		9F858B901EB6384E0062055D /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6928891EB505A700CD7EEC /* AppDelegate.swift */,
+				9F858B901EB6384E0062055D /* Shapes.swift */,
 				9F6928B71EB506E300CD7EEC /* MetaballsViewController.swift */,
 				9F6928BF1EB521E100CD7EEC /* CellView.swift */,
 				9F6928B91EB5078700CD7EEC /* Grid.swift */,
@@ -269,6 +272,7 @@
 				9F6928B81EB506E300CD7EEC /* MetaballsViewController.swift in Sources */,
 				9F69288A1EB505A700CD7EEC /* AppDelegate.swift in Sources */,
 				9F6928BA1EB5078700CD7EEC /* Grid.swift in Sources */,
+				9F858B911EB6384E0062055D /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				9F6928B01EB505A700CD7EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F6928B11EB505A700CD7EEC /* Build configuration list for PBXNativeTarget "MetaballsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				9F6928B31EB505A700CD7EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F6928B41EB505A700CD7EEC /* Build configuration list for PBXNativeTarget "MetaballsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				9F6928B61EB505A700CD7EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

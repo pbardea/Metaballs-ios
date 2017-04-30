@@ -23,22 +23,6 @@ class CellView: UIView {
         fatalError("This class does not support NSCoding")
     }
     
-//    override func drawRect(rect: CGRect) {
-//        var aPath = UIBezierPath()
-//        
-//        aPath.moveToPoint(CGPoint(x:/*Put starting Location*/, y:/*Put starting Location*/))
-//        
-//        aPath.addLineToPoint(CGPoint(x:/*Put Next Location*/, y:/*Put Next Location*/))
-//        
-//        //Keep using the method addLineToPoint until you get to the one where about to close the path
-//        
-//        aPath.closePath()
-//        
-//        //If you want to stroke it with a red color
-//        UIColor.redColor().set()
-//        aPath.stroke()
-//    }
-    
     enum Axis {
         case x, y
     }
