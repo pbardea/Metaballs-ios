@@ -17,6 +17,7 @@
 		9F6928BC1EB5094900CD7EEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6928BB1EB5094900CD7EEC /* Extensions.swift */; };
 		9F6928C01EB521E100CD7EEC /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6928BF1EB521E100CD7EEC /* CellView.swift */; };
 		9F858B911EB6384E0062055D /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F858B901EB6384E0062055D /* Shapes.swift */; };
+		9F858B971EB63C1B0062055D /* GirdBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F858B961EB63C1B0062055D /* GirdBasics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9F6928BB1EB5094900CD7EEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9F6928BF1EB521E100CD7EEC /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		9F858B901EB6384E0062055D /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		9F858B961EB63C1B0062055D /* GirdBasics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GirdBasics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9F6928BF1EB521E100CD7EEC /* CellView.swift */,
 				9F6928B91EB5078700CD7EEC /* Grid.swift */,
 				9F6928BB1EB5094900CD7EEC /* Extensions.swift */,
+				9F858B961EB63C1B0062055D /* GirdBasics.swift */,
 				9F6928901EB505A700CD7EEC /* Assets.xcassets */,
 				9F6928921EB505A700CD7EEC /* LaunchScreen.storyboard */,
 				9F6928951EB505A700CD7EEC /* Info.plist */,
@@ -273,6 +276,7 @@
 				9F69288A1EB505A700CD7EEC /* AppDelegate.swift in Sources */,
 				9F6928BA1EB5078700CD7EEC /* Grid.swift in Sources */,
 				9F858B911EB6384E0062055D /* Shapes.swift in Sources */,
+				9F858B971EB63C1B0062055D /* GirdBasics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,12 +28,11 @@ class CellView: UIView {
     }
     
     func interpolate(a: Grid.Corner, b: Grid.Corner, axis: Axis) -> Point? {
-        let ba = a.val >= 1
-        let bb = b.val >= 1
-        guard (ba != bb) else { return nil }
+        let isAActive = a.val >= 1
+        let isBActive = b.val >= 1
+        guard (isAActive != isBActive) else { return nil }
         let density = max(abs(a.x - b.x), abs(a.y - b.y))
-        let factor = ((1-a.val)/(b.val - a.val))
-        let add = factor * density
+        let add = ((1-a.val)/(b.val - a.val)) * density
         switch axis {
         case .x:
             return Point(x: Double(a.x) + add, y: Double(a.y))
@@ -57,14 +56,13 @@ class CellView: UIView {
         let r = interpolate(a: tr, b: br, axis: .y)
         let b = interpolate(a: bl, b: br, axis: .x)
         
-        var points = [Point?]()
+        var points = [t, l, b, r]
         
-        if (tl.val >= 1 && bl.val >= 1 && tr.val < 1 && br.val < 1) {
+        if (tl.val >= 1 && bl.val >= 1 && tr.val < 1 && br.val < 1) { // Special case
             points = [l, b, r, t]
-        } else {
-            points = [t, l, b, r]
         }
         
+        // Filters out all `nil` elements
         self.points = points.flatMap { $0 }
         
         for i in (0..<(self.points.count/2)) {
